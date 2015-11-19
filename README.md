@@ -22,7 +22,6 @@ sudo make image PROFILE=WNDR4300 PACKAGES="wget luci luci-theme-bootstrap luci-i
 ```
 
 ## 从已配置好的 `WNDR4300` 路由中备份配置文件
-- 
 ```
 scp root@192.168.1.1:/etc/config/firewall ./etc/config/
 scp root@192.168.1.1:/etc/firewall.user ./etc/
