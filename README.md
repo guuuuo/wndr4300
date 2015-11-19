@@ -1,3 +1,10 @@
+## 开启 WNDR4300 128M 内存
+[参考这里](https://github.com/openwrt-mirror/openwrt/commit/1dbb652ea0594c284710ace5e479c1ac7fdd1cbb)，修改文件 **target/linux/ar71xx/image/Makefile**
+```diff
+- wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),23552k(ubi),25600k@0x6c0000(firmware),256k(caldata_backup),-(reserved)
++ wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),120832k(ubi),122880k@0x6c0000(firmware),256k(caldata_backup),-(reserved)
+```
+
 ## 构建命令
 - 清理
 ```
