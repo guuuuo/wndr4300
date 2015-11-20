@@ -1,4 +1,12 @@
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
+
 ipset -N gfwlist iphash
+
+isfound=$(ps | grep "ss-redir" | grep -v "grep"); if [ -z "$isfound" ]; then echo "$(date): restart ss-redir...">>/tmp/log/ss-monitor.log && /etc/init.d/shadowsocks restart; fi
+
+isfound=$(ps | grep "dnsmasq" | grep -v "grep"); if [ -z "$isfound" ]; then echo "$(date): restart dnsmasq...">>/tmp/log/dnsmasq-monitor.log && /etc/init.d/dnsmasq restart; fi
+
+isfound=$(ps | grep "pdnsd" | grep -v "grep"); if [ -z "$isfound" ]; then echo "$(date): restart pdnsd...">>/tmp/log/pdnsd-monitor.log && /etc/init.d/pdnsd restart; fi
+
 exit 0
