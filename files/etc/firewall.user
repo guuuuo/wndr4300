@@ -1,2 +1,15 @@
 iptables -t nat -A PREROUTING -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-port 1080
 iptables -t nat -A OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-port 1080
+# block tmall box update
+iptables -I INPUT -s 42.156.141.75 -j DROP
+iptables -I INPUT -s 140.205.172.1 -j DROP
+iptables -I INPUT -s 42.156.0.0/16 -j DROP
+iptables -I INPUT -s 140.205.171.0/24 -j DROP
+iptables -I INPUT -s 140.205.172.0/24 -j DROP
+iptables -I FORWARD -d 140.205.172.1 -j DROP
+iptables -I FORWARD -d 42.156.141.75 -j DROP
+iptables -I FORWARD -d tvupgrade.yunos.com -j DROP
+iptables -I FORWARD -d osupdate.aliyun.com -j DROP
+iptables -I FORWARD -d osfota.cdn.aliyun.com -j DROP
+iptables -I FORWARD -d api.yunos.wasu.tv -j DROP
+iptables -I FORWARD -d video.alitv.yunos.com -j DROP
