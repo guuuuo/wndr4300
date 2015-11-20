@@ -20,5 +20,6 @@ gfwlist() {
 adblock
 gfwlist
 
+echo "$(date): /etc/init.d/dnsmasq restarting">>/tmp/log/dnsmasq-config-update.log
 /etc/init.d/dnsmasq restart
-echo "$(date): /etc/init.d/dnsmasq restart">>/tmp/log/dnsmasq-config-update.log
+echo "$(date): /etc/init.d/dnsmasq restarted">>/tmp/log/dnsmasq-config-update.log
