@@ -14,8 +14,8 @@ import base64
 import shutil
 import ssl
  
-mydnsip = '104.224.158.154'
-mydnsport = '5053'
+mydnsip = '127.0.0.1'
+mydnsport = '5300'
 ipsetname = 'gfwlist'
 # Extra Domain;
 EX_DOMAIN=[ \
