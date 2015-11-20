@@ -41,8 +41,9 @@ baseurl = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 comment_pattern = '^\!|\[|^@@|^\d+\.\d+\.\d+\.\d+'
 domain_pattern = '([\w\-\_]+\.[\w\.\-\_]+)[\/\*]*' 
 tmpfile = '/tmp/gfwlisttmp'
+# do not write to router internal flash directly
 outfile = '/etc/dnsmasq.d/dnsmasq_gfwlist.conf'
-
+ 
 fs =  file(outfile, 'w')
 fs.write('# gfw list ipset rules for dnsmasq\n')
 fs.write('# updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
