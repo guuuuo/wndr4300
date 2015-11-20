@@ -18,7 +18,7 @@ sudo make image PROFILE=WNDR4300 PACKAGES="luci luci-theme-bootstrap luci-i18n-b
 
 - 构建带透明代理功能的固件，在简洁版的基础上，添加：`dnsmasq-full`, `shadowsocks`, `python`
 ```
-sudo make image PROFILE=WNDR4300 PACKAGES="luci luci-theme-bootstrap luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn luci-app-statistics luci-i18n-statistics-zh-cn iptables-mod-nat-extra ipset libopenssl shadowsocks-libev -dnsmasq dnsmasq-full python wget" FILES=files/
+sudo make image PROFILE=WNDR4300 PACKAGES="wget luci luci-theme-bootstrap luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn iptables-mod-nat-extra ipset libopenssl shadowsocks-libev -dnsmasq dnsmasq-full pdnsd python luci-app-upnp luci-i18n-upnp-zh-cn" FILES=files/
 ```
 
 ## 从已配置好的 `WNDR4300` 路由中备份配置文件
