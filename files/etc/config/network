@@ -20,8 +20,11 @@ config interface 'lan'
 
 config interface 'wan'
 	option ifname 'eth0.2'
-	option proto 'dhcp'
-	option macaddr '6c:b0:ce:f5:09:fc'
+	option _orig_ifname 'eth0.2'
+	option _orig_bridge 'false'
+	option proto 'pppoe'
+	option username ''
+	option password ''
 
 config interface 'wan6'
 	option ifname 'eth0.2'

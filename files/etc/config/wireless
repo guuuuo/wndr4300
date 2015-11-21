@@ -4,11 +4,11 @@ config wifi-device 'radio0'
 	option hwmode '11g'
 	option path 'platform/ar934x_wmac'
 	option noscan '1'
-	option txpower '30'
-	option channel '3'
-	option htmode 'HT40+'
 	option country 'US'
 	option disabled '0'
+	option channel '6'
+	option htmode 'HT20'
+	option txpower '26'
 
 config wifi-iface
 	option device 'radio0'
@@ -20,7 +20,6 @@ config wifi-iface
 	option wpa_master_rekey '0'
 	option ssid 'WNDR4300'
 	option key '11111111'
-	option hidden '0'
 
 config wifi-device 'radio1'
 	option type 'mac80211'

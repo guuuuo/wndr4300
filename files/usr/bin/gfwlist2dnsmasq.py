@@ -1,19 +1,19 @@
 #!/usr/bin/env python  
 #coding=utf-8
-#  
+#
 # Generate a list of dnsmasq rules with ipset for gfwlist
-#  
-# Copyright (C) 2014 http://www.shuyz.com   
-# Ref https://github.com/gfwlist/gfwlist   
- 
-import urllib2 
+#
+# Copyright (C) 2014 http://www.shuyz.com
+# Ref https://github.com/gfwlist/gfwlist
+
+import urllib2
 import re
 import os
 import datetime
 import base64
 import shutil
 import ssl
- 
+
 mydnsip = '127.0.0.1'
 mydnsport = '5300'
 ipsetname = 'gfwlist'
@@ -34,39 +34,39 @@ EX_DOMAIN=[ \
 '.1e100.net', \
 '.blogspot.tw' \
 ]
- 
+
 # the url of gfwlist
 baseurl = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 # match comments/title/whitelist/ip address
 comment_pattern = '^\!|\[|^@@|^\d+\.\d+\.\d+\.\d+'
-domain_pattern = '([\w\-\_]+\.[\w\.\-\_]+)[\/\*]*' 
+domain_pattern = '([\w\-\_]+\.[\w\.\-\_]+)[\/\*]*'
 tmpfile = '/tmp/gfwlisttmp'
 # do not write to router internal flash directly
 outfile = '/etc/dnsmasq.d/dnsmasq_gfwlist.conf'
- 
+
 fs =  file(outfile, 'w')
 fs.write('# gfw list ipset rules for dnsmasq\n')
 fs.write('# updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
 fs.write('#\n')
- 
+
 print 'fetching list...'
 if hasattr(ssl, '_create_unverified_context'):
 	ssl._create_default_https_context = ssl._create_unverified_context
 content = urllib2.urlopen(baseurl, timeout=15).read().decode('base64')
- 
+
 # write the decoded content to file then read line by line
 tfs = open(tmpfile, 'w')
 tfs.write(content)
 tfs.close()
 tfs = open(tmpfile, 'r')
- 
+
 print 'page content fetched, analysis...'
- 
+
 # remember all blocked domains, in case of duplicate records
 domainlist = []
 
- 
-for line in tfs.readlines():	
+
+for line in tfs.readlines():
 	if re.findall(comment_pattern, line):
 		print 'this is a comment line: ' + line
 		#fs.write('#' + line)
@@ -83,8 +83,8 @@ for line in tfs.readlines():
 				fs.write('ipset=/.%s/%s\n'%(domain[0],ipsetname))
 		else:
 			print 'no valid domain in this line: ' + line
-					
-tfs.close()	
+
+tfs.close()
 
 for each in EX_DOMAIN:
 	fs.write('server=/%s/%s#%s\n'%(each,mydnsip,mydnsport))
@@ -93,5 +93,5 @@ for each in EX_DOMAIN:
 print 'write extra domain done'
 
 fs.close();
- 
+
 print 'done!'
