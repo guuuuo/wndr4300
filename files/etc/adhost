@@ -1,0 +1,217 @@
+127.0.0.1 localhost
+
+#Baidu-iQiyi
+0.0.0.0 ad.m.iqiyi.com
+0.0.0.0 afp.qiyi.com
+0.0.0.0 c.uaa.iqiyi.com
+0.0.0.0 cloudpush.iqiyi.com
+0.0.0.0 feedback.iqiyi.com
+0.0.0.0 jsmsg.video.qiyi.com
+0.0.0.0 mbdapp.iqiyi.com
+0.0.0.0 mbdlog.iqiyi.com
+0.0.0.0 mixer.cupid.iqiyi.com
+0.0.0.0 msg.iqiyi.com
+0.0.0.0 msg.video.qiyi.com
+0.0.0.0 nl.rcd.iqiyi.com
+0.0.0.0 track.cupid.qiyi.com
+0.0.0.0 msga.71.am
+0.0.0.0 msg.71.am
+0.0.0.0 api.msg.pps.tv
+0.0.0.0 data.video.qiyi.com
+0.0.0.0 ifacelog.iqiyi.com
+0.0.0.0 iface.iqiyi.com
+#0.0.0.0 iface2.iqiyi.com
+0.0.0.0 api.cupid.qiyi.com
+0.0.0.0 irs01.com
+0.0.0.0 iqiyi.irs01.com
+0.0.0.0 msg.video.qiyi.com
+#0.0.0.0 policy.video.iqiyi.com
+
+#Baidu-PPStream
+0.0.0.0 areainfo.ppstream.com
+0.0.0.0 listso.m.areainfo.ppstream.com
+0.0.0.0 mbfile.ppstream.com
+0.0.0.0 notice.ppstream.com
+0.0.0.0 stat.ppstream.com
+0.0.0.0 br.pps.tv
+0.0.0.0 click.ipd.pps.tv
+0.0.0.0 count.game.pps.tv
+0.0.0.0 g.pps.tv
+0.0.0.0 nt.game.pps.tv
+0.0.0.0 game.pps.tv
+0.0.0.0 in.pps.tv
+0.0.0.0 ipdstat.pps.tv
+0.0.0.0 mini.pps.tv
+0.0.0.0 mobile.game.pps.tv
+0.0.0.0 msg.y.pps.tv
+0.0.0.0 pl.pps.tv
+0.0.0.0 source.click.ipd.pps.tv
+0.0.0.0 spider.pps.tv
+0.0.0.0 stat.game.pps.tv
+0.0.0.0 stat.y.pps.tv
+0.0.0.0 ugcad.pps.tv
+0.0.0.0 ugcs.pps.tv
+0.0.0.0 wt.game.pps.tv
+0.0.0.0 br.ppstv.net
+0.0.0.0 download.webscache.com
+0.0.0.0 update.111222.cn
+0.0.0.0 update.base-service.net
+
+#QQ-Live
+0.0.0.0 aid.video.qq.com
+0.0.0.0 c.l.qq.com
+0.0.0.0 livep.l.qq.com
+0.0.0.0 lives.l.qq.com
+0.0.0.0 news.l.qq.com
+0.0.0.0 p.l.qq.com
+0.0.0.0 t.l.qq.com
+0.0.0.0 rlog.video.qq.com
+0.0.0.0 la.gtimg.com
+0.0.0.0 pgdt.gtimg.cn
+
+#SohuTV
+0.0.0.0 agn.aty.sohu.com
+0.0.0.0 aty.tv.sohu.com
+0.0.0.0 atyt.tv.sohu.com
+0.0.0.0 click2.hd.sohu.com
+0.0.0.0 count.vrs.sohu.com
+0.0.0.0 ctr.hd.sohu.com
+0.0.0.0 dev.app.yule.sohu.com
+0.0.0.0 m.aty.sohu.com
+0.0.0.0 mmg.aty.sohu.com
+0.0.0.0 p.aty.sohu.com
+0.0.0.0 pb.hd.sohu.com
+0.0.0.0 pg.aty.sohu.com
+0.0.0.0 pv.hd.sohu.com
+0.0.0.0 stat.m.tv.sohu.com
+0.0.0.0 upgrade.m.tv.sohu.com
+0.0.0.0 v.aty.sohu.com
+0.0.0.0 vg.aty.sohu.com
+0.0.0.0 vm.aty.sohu.com
+0.0.0.0 click.hd.sohu.com.cn
+0.0.0.0 mb.hd.sohu.com.cn
+0.0.0.0 pb.hd.sohu.com.cn
+
+#Youku
+0.0.0.0 ad.api.3g.youku.com
+0.0.0.0 ad.atm.youku.com
+0.0.0.0 api.gamex.mobile.youku.com
+0.0.0.0 atm.youku.com
+0.0.0.0 c.miaozhen.atm.youku.com
+0.0.0.0 cm.miaozhen.atm.youku.com
+0.0.0.0 count.atm.youku.com
+0.0.0.0 dl.m.youku.com
+0.0.0.0 e.stat.youku.com
+0.0.0.0 fvid.atm.youku.com
+0.0.0.0 html.atm.youku.com
+0.0.0.0 lstat.youku.com
+0.0.0.0 mf.atm.youku.com
+0.0.0.0 p-log.ykimg.com
+0.0.0.0 passport-log.youku.com
+0.0.0.0 push.m.youku.com
+0.0.0.0 stat.youku.com
+0.0.0.0 static.atm.youku.com
+0.0.0.0 td.atm.youku.com
+0.0.0.0 test.gamex.mobile.youku.com
+0.0.0.0 v2html.atm.youku.com
+0.0.0.0 valb.atm.youku.com
+0.0.0.0 valc.atm.youku.com
+0.0.0.0 valf.atm.youku.com
+0.0.0.0 valo.atm.youku.com
+0.0.0.0 valp.atm.youku.com
+0.0.0.0 vhtml.atm.youku.com
+0.0.0.0 vhtml.youku.com
+0.0.0.0 vid.atm.youku.com
+0.0.0.0 walp.atm.youku.com
+
+#Baofeng
+0.0.0.0 action.logger.baofeng.com
+0.0.0.0 androidlog.shouji.baofeng.com
+0.0.0.0 clicklog.hd.baofeng.com
+0.0.0.0 clicklog.moviebox.baofeng.com
+0.0.0.0 dailylog.storm.baofeng.com
+0.0.0.0 errorcode.logger.baofeng.com
+0.0.0.0 eventlog.hd.baofeng.com
+0.0.0.0 gw.baofeng.com
+0.0.0.0 houyi.logger.baofeng.com
+0.0.0.0 listlog.baofeng.net
+0.0.0.0 logger.treexml.baofeng.com
+0.0.0.0 market.shouji.baofeng.com
+0.0.0.0 midinfo.baofeng.com
+0.0.0.0 sclog.moviebox.baofeng.com
+0.0.0.0 tips.logger.baofeng.com
+0.0.0.0 tree.logger.baofeng.com
+0.0.0.0 vdinfo.baofeng.com
+0.0.0.0 videodown.baofeng.com
+0.0.0.0 yclick.logger.baofeng.com
+0.0.0.0 y2click.logger.baofeng.com
+0.0.0.0 yactive.logger.baofeng.com
+0.0.0.0 ypv.logger.baofeng.com
+0.0.0.0 boxlist.baofeng.net
+0.0.0.0 clicklog.moviebox.baofeng.net
+0.0.0.0 log.houyi.baofeng.net
+0.0.0.0 ploy.baofeng.net
+0.0.0.0 pvlog.moviebox.baofeng.net
+0.0.0.0 web.houyi.baofeng.net
+0.0.0.0 wl.houyi.baofeng.net
+0.0.0.0 xs.houyi.baofeng.net
+
+#PPTV
+0.0.0.0 asimgs.pplive.cn
+0.0.0.0 ads.data.pplive.com
+0.0.0.0 afp.pplive.com
+0.0.0.0 afv.pplive.com
+0.0.0.0 caipiao.pplive.com
+0.0.0.0 dh.pplive.com
+0.0.0.0 g.pplive.com
+0.0.0.0 ins-stat.pplive.com
+0.0.0.0 ins-version.pplive.com
+0.0.0.0 ins.pplive.com
+0.0.0.0 live.v2.pplive.com
+0.0.0.0 pp1.pplive.com
+0.0.0.0 pp2.as.pplive.cn
+0.0.0.0 up.pplive.com
+0.0.0.0 as.aplus.pptv.com
+0.0.0.0 de.as.pptv.com
+0.0.0.0 dl4.vas.pptv.com
+0.0.0.0 g.pptv.com
+0.0.0.0 ga.pptv.com
+0.0.0.0 iafp.pptv.com
+0.0.0.0 jp.as.pptv.com
+0.0.0.0 pp2.pptv.com
+0.0.0.0 ppsj.pptv.com
+0.0.0.0 static.g.pptv.com
+0.0.0.0 tips.passport.pptv.com
+0.0.0.0 tj.g.pptv.com
+0.0.0.0 vas.aplus.pptv.com
+0.0.0.0 wafp.pptv.com
+0.0.0.0 way.pptv.com
+0.0.0.0 wstat.pptv.com
+0.0.0.0 zt.pptv.com
+0.0.0.0 h.g1d.net
+0.0.0.0 p.g1d.net
+0.0.0.0 ppva.g1d.net
+0.0.0.0 video-va.g1d.net
+
+#Letv
+0.0.0.0 ark.letv.com
+0.0.0.0 plog.dc.letv.com
+0.0.0.0 dc.letv.com
+0.0.0.0 dev.dc.letv.com
+0.0.0.0 pro.letv.com
+0.0.0.0 pro.hoye.letv.com
+0.0.0.0 stat.letv.com
+
+#irs01
+0.0.0.0 bitauto.irs01.com
+0.0.0.0 h.irs01.com
+0.0.0.0 irs01.com
+0.0.0.0 letv.irs01.com
+0.0.0.0 m.irs01.com
+0.0.0.0 sohu.irs01.com
+0.0.0.0 pcauto.irs01.com
+0.0.0.0 irs01.net
+
+#irs09
+0.0.0.0 irs09.com
+0.0.0.0 static.irs09.com
