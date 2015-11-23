@@ -1,5 +1,3 @@
 */5 * * * * isfound=$(ps | grep "ss-redir" | grep -v "grep"); if [ -z "$isfound" ]; then echo "$(date): restart ss-redir...">>/tmp/log/ss-monitor.log && /etc/init.d/shadowsocks restart; fi
 */5 * * * * isfound=$(ps | grep "dnsmasq" | grep -v "grep"); if [ -z "$isfound" ]; then echo "$(date): restart dnsmasq...">>/tmp/log/dnsmasq-monitor.log && /etc/init.d/dnsmasq restart; fi
 */5 * * * * isfound=$(ps | grep "pdnsd" | grep -v "grep"); if [ -z "$isfound" ]; then echo "$(date): restart pdnsd...">>/tmp/log/pdnsd-monitor.log && /etc/init.d/pdnsd restart; fi
-# update dnsmasq config file 22:00 Saturday
-0 22 * * 6 /usr/binupdatednsmasqconf
