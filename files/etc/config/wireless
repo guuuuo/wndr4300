@@ -38,4 +38,3 @@ config wifi-iface
 	option encryption 'psk2'
 	option ssid 'WNDR4300-5G'
 	option key '11111111'
-

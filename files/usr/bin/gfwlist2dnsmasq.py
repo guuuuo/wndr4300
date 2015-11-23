@@ -1,4 +1,4 @@
-#!/usr/bin/env python  
+#!/usr/bin/env python
 #coding=utf-8
 #
 # Generate a list of dnsmasq rules with ipset for gfwlist
@@ -32,6 +32,7 @@ EX_DOMAIN=[ \
 '.gvt2.com', \
 '.gvt3.com', \
 '.1e100.net', \
+'.amazonaws.com', \
 '.blogspot.tw' \
 ]
 
